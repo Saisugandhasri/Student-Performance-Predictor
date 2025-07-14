@@ -23,6 +23,6 @@ name='mlproject',
 version='0.0.1',
 author='sugu',
 author_email='saidivya282006@gmail.com',
-packages=find_packages(),
+packages=find_packages(), #Auto-detects all Python packages (folders with __init__.py)
 install_requires=get_requirements('requirements.txt')
 )
