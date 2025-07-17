@@ -9,7 +9,7 @@ def error_message_detail(error,error_detail:sys): #This function takes: error: t
     return error_message
 
 
-class CustomException(Exception):
+class CustomException(Exception):   #customexception classs is inherited from Exception class
     def __init__(self,error_message,error_detail:sys):
         super().__init__(error_message) #Calls base class Exception to store the original message
         self.error_message=error_message_detail(error_message,error_detail=error_detail)
